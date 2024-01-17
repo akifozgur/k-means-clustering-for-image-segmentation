@@ -48,14 +48,14 @@ In this assignment, I will use the K-means clustering algorithm for image segmen
 I'll extract the features listed below and I'll perform the segmentation method by using each of them.
 
 ### 1. Features
-#### Pixel-Level Features
+#### - Pixel-Level Features
 I’ll extract two different features for every pixel in the image; the RGB color feature and spatial location feature.
 
 (a) RGB color feature: I'll concatenate R, G, and B color channel values for each pixel for representation. In other words, each pixel will be represented with [R G B].
 
 (b) RGB color and spatial location feature: Every pixel will be represented with RGB color values and location information which is the coordinate of the pixel. Each pixel will be represented with the [R G B x y] feature vector.
 
-####  Superpixel-Level Features
+####  - Superpixel-Level Features
 For this step, I will extract superpixels by using SLIC Superpixel. I will define a feature vector to represent each superpixel.
 <p align="center"> 
 <img src=https://github.com/akifozgur/k-means-clustering-for-image-segmentation/blob/main/img/superpixel.png>
