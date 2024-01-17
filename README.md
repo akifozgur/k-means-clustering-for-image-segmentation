@@ -47,11 +47,12 @@ In this assignment, I will use the K-means clustering algorithm for image segmen
 
 I'll extract the features listed below and I'll perform the segmentation method by using each of them.
 
-1.  Features
+### 1. Features
 #### Pixel-Level Features
 I’ll extract two different features for every pixel in the image; the RGB color feature and spatial location feature.
 
 (a) RGB color feature: I'll concatenate R, G, and B color channel values for each pixel for representation. In other words, each pixel will be represented with [R G B].
+
 (b) RGB color and spatial location feature: Every pixel will be represented with RGB color values and location information which is the coordinate of the pixel. Each pixel will be represented with the [R G B x y] feature vector.
 
 ####  Superpixel-Level Features
@@ -61,10 +62,12 @@ For this step, I will extract superpixels by using SLIC Superpixel. I will defin
 </p>
 
 (a) Mean of RGB color values: A superpixel is represented with the mean color value of pixels that are included by the superpixel.
+
 (b) RGB color histogram: A superpixel is represented by RGB color histogram which is extracted by using all pixels contained by that super-pixel.
+
 (c) Mean of Gabor filter responses: At this step, I’ll create a filter bank by calculating Gabor filters at different scales and orientations. Then I’ll filter the input image with each Gabor filter. I’ll use the response map to represent superpixels. A superpixel is represented by calculating the mean of Gabor filter response values of pixels that are included by the superpixel.
 
-2. K-Means Clustering
+### 2. K-Means Clustering
 I will implement your own K-Means clustering algorithm for this step. My K-means function will take two parameters; the data matrix(feature matrix/vector) and the k parameter. I’ll use your feature matrix as input data and determine the k parameter which is the count of clusters I want to generate.
 I will perform clustering for each feature; RGB color at pixel level, RGB color and location feature at pixel level, mean RGB feature at superpixel level, RGB color histogram at superpixel level, and mean Gabor response at superpixel level.
 
