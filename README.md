@@ -22,8 +22,7 @@ possibilities in image analysis and interpretation.
 <img src=https://github.com/akifozgur/k-means-clustering-for-image-segmentation/blob/main/img/segmentation.jpg>
 </p>
 
-### Overview of Clustering and Its Relevance in Image
-Analysis
+### Overview of Clustering and Its Relevance in Image Analysis
 
   One of the prevalent approaches to image segmentation
 involves the utilization of clustering algorithms, among which K-
