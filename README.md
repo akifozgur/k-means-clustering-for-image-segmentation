@@ -67,7 +67,7 @@ For this step, I will extract superpixels by using SLIC Superpixel. I will defin
 (c) Mean of Gabor filter responses: At this step, I’ll create a filter bank by calculating Gabor filters at different scales and orientations. Then I’ll filter the input image with each Gabor filter. I’ll use the response map to represent superpixels. A superpixel is represented by calculating the mean of Gabor filter response values of pixels that are included by the superpixel.
 
 ### 2. K-Means Clustering
-I will implement your own K-Means clustering algorithm for this step. My K-means function will take two parameters; the data matrix(feature matrix/vector) and the k parameter. I’ll use your feature matrix as input data and determine the k parameter which is the count of clusters I want to generate.
+I will implement my own K-Means clustering algorithm for this step. My K-means function will take two parameters; the data matrix(feature matrix/vector) and the k parameter. I’ll use your feature matrix as input data and determine the k parameter which is the count of clusters I want to generate.
 I will perform clustering for each feature; RGB color at pixel level, RGB color and location feature at pixel level, mean RGB feature at superpixel level, RGB color histogram at superpixel level, and mean Gabor response at superpixel level.
 
 ## How the K-Means Algorithm Works
